@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<script sr='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>*@
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="~/Scripts/App/Test/Application.js"></script>
+<script src="~/Scripts/App/Test/Service.js"></script>
+<script src="~/Scripts/App/Test/TestCtrl.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+
+<div ng-app="MyApp">
+    <div ng-controller="TestCtrl" class="col-md-12">
+        <form name="form" class="css-form">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="form-group">
+                            <div>
+                              <label class="control-label">Input Data:</label>  
+                            </div>
+                            <div>
+                                <textarea id="JsonData" ng-model="JsonInputted" class="form-control" ng-required>{{JsonInputted}}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-info" id="" ng-click="getFilteredJson()" value="Submit Json Request">
+                        </div>
+                    </div>
+                    <div class="row col-md-12">
+                       <text  ng-model="Result" class="form-control" style="width:700px;height:300px;" ng-hide="Result.length==0" >{{Result}}</text>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

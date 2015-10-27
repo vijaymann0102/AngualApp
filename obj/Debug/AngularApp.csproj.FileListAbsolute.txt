@@ -1,0 +1,7 @@
+F:\AngularProject\AngularApp\bin\AngularApp.dll.config
+F:\AngularProject\AngularApp\bin\AngularApp.dll
+F:\AngularProject\AngularApp\bin\AngularApp.pdb
+F:\AngularProject\AngularApp\bin\Microsoft.Web.Infrastructure.dll
+F:\AngularProject\AngularApp\bin\Microsoft.Web.Infrastructure.xml
+F:\AngularProject\AngularApp\obj\Debug\AngularApp.dll
+F:\AngularProject\AngularApp\obj\Debug\AngularApp.pdb
